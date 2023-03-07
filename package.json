@@ -1,0 +1,23 @@
+{
+  "name": "backend-nodejs-tutorial",
+  "version": "1.0.0",
+  "description": "backend-tutorial",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/server.js",
+    "production": "npm run build && npm run start",
+    "dev": "nodemon --exec ts-node ./src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "son",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
+    "nodemon": "^2.0.21"
+  }
+}
